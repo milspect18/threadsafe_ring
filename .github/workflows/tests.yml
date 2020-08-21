@@ -2,7 +2,7 @@ name: Tests
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, kyleprice/standUpCI ]
   pull_request:
     branches: [ master ]
 
