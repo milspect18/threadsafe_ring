@@ -14,11 +14,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       
-    - name: run cmake
-      run: cmake -H. -Bbuild -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DBUILD_EXAMPLE=ON -DBUILD_TESTS=ON
+    - name: g++ version
+      run: g++ --version
+    # - name: run cmake
+    #   run: cmake -H. -Bbuild -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DBUILD_EXAMPLE=ON -DBUILD_TESTS=ON
         
-    - name: build
-      run: cmake --build build
+    # - name: build
+    #   run: cmake --build build
       
-    - name: test
-      run: ./build/test/test_runner
+    # - name: test
+    #   run: ./build/test/test_runner
