@@ -16,8 +16,8 @@ jobs:
       
     - name: g++ version
       run: |
-      sudo apt install g++-9
-      g++ --version
+        sudo apt install g++-9
+        g++ --version
     # - name: run cmake
     #   run: cmake -H. -Bbuild -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DBUILD_EXAMPLE=ON -DBUILD_TESTS=ON
         
