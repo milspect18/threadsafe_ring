@@ -16,6 +16,9 @@ project(
 # then add the dir to the compiler includes path
 set(PROJECT_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/inc/ringbuffer)
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 option(BUILD_EXAMPLE "ON to build the example projects. OFF to omit. (OFF by default" OFF)
 option(BUILD_TESTS "ON to build the tests and runner. OFF to omit. (OFF by default" OFF)
 
