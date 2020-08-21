@@ -15,7 +15,9 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: g++ version
-      run: g++ --version
+      run: |
+      sudo apt install g++-9
+      g++ --version
     # - name: run cmake
     #   run: cmake -H. -Bbuild -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DBUILD_EXAMPLE=ON -DBUILD_TESTS=ON
         
