@@ -19,11 +19,18 @@ jobs:
         mkdir build
         cd build
       
-    - name: run cmake
-      run: cmake -DBUILD_TESTS=ON ..
+    - name: print dir
+      run: |
+        pwd
+        ls
+        cd ..
+        ls
+        pwd
+#     - name: run cmake
+#       run: cmake -DBUILD_TESTS=ON ..
       
-    - name: make
-      run: make
+#     - name: make
+#       run: make
       
-    - name: run tests
-      run: ./test/test_runner
+#     - name: run tests
+#       run: ./test/test_runner
