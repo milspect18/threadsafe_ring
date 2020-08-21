@@ -1,9 +1,7 @@
 //
 //  main.cpp
-//  AdvCppCourse_Exc
 //
 //  Created by Kyle Price on 8/9/20.
-//  Copyright © 2020 Kyle Price. All rights reserved.
 //
 
 #include <string>
