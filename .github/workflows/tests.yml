@@ -13,16 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      
-    - name: g++ version
-      run: |
-        sudo apt install g++-9
-        g++ --version
-    # - name: run cmake
-    #   run: cmake -H. -Bbuild -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DBUILD_EXAMPLE=ON -DBUILD_TESTS=ON
+
+    - name: run cmake
+      run: cmake -H. -Bbuild -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DBUILD_EXAMPLE=ON -DBUILD_TESTS=ON -DCMAKE_CXX_COMPILER=g++-9
         
-    # - name: build
-    #   run: cmake --build build
+    - name: build
+      run: cmake --build build
       
-    # - name: test
-    #   run: ./build/test/test_runner
+    - name: test
+      run: ./build/test/test_runner
